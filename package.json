@@ -1,0 +1,17 @@
+{
+  "name": "kaogong-knowledge-base",
+  "version": "1.0.0",
+  "description": "考公个人复习知识库 —— Markdown 笔记 → 手机友好的静态网页",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node 构建/build.mjs",
+    "serve": "node 构建/server.mjs"
+  },
+  "dependencies": {
+    "marked": "^18.0.11"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.9.0"
+  }
+}
