@@ -14,7 +14,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const NOTES_DIR = path.join(ROOT, "笔记");
 const OUT_DIR = path.join(ROOT, "网站");
+const ASSETS_DIR = path.join(OUT_DIR, "assets");
 const CONFIG_PATH = path.join(NOTES_DIR, "目录.json");
+
+// 确保输出目录存在（本地可能已存在，CI 干净环境需要）
+fs.mkdirSync(OUT_DIR, { recursive: true });
+fs.mkdirSync(ASSETS_DIR, { recursive: true });
 
 marked.setOptions({ gfm: true, breaks: false });
 
