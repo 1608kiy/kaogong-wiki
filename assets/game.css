@@ -1,0 +1,146 @@
+/* =========================================================
+   百化分 · 配对小游戏 样式（和风手帐风）
+   ========================================================= */
+
+/* 覆盖英雄区 */
+.game-hero { border-color: color-mix(in srgb, #a8842a 36%, var(--border)); }
+
+.game-wrap {
+  max-width: 620px; margin: 0 auto 20px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  box-shadow: var(--shadow); overflow: hidden;
+}
+
+.game-pad { padding: 26px 26px 30px; }
+@media (max-width: 560px) { .game-pad { padding: 20px 18px 24px; } }
+
+/* 顶部状态条 */
+.game-status {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  padding: 14px 22px; border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, #a8842a 7%, var(--surface));
+}
+.gs-item { font-size: 13px; color: var(--ink-2); display: flex; align-items: baseline; gap: 6px; }
+.gs-item b { font-family: var(--serif); font-size: 16px; color: var(--ink); }
+.gs-right { margin-left: auto; display: flex; gap: 8px; }
+.gs-btn, .gbtn {
+  font-family: var(--sans); font-size: 13px; padding: 7px 14px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--surface); color: var(--ink-2); transition: all .22s ease;
+}
+.gs-btn:hover, .gbtn:hover { border-color: #a8842a; color: #a8842a; transform: translateY(-1px); }
+.gs-btn.on { background: #a8842a; border-color: #a8842a; color: #fdfbf5; }
+
+/* 进度条 */
+.game-progress { height: 4px; background: var(--surface-2); position: relative; }
+.game-progress .bar {
+  position: absolute; left: 0; top: 0; bottom: 0; width: 0%;
+  background: linear-gradient(90deg, color-mix(in srgb, #a8842a 60%, #d78f3c), #a8842a);
+  transition: width .45s ease; border-radius: 0 4px 4px 0;
+}
+
+/* 模式选择屏 */
+.game-screen { }
+.setup-title { font-family: var(--serif); font-size: 19px; font-weight: 700; text-align: center; letter-spacing: .04em; margin-bottom: 6px; }
+.setup-sub { text-align: center; color: var(--muted); font-size: 13px; margin-bottom: 24px; }
+.setup-blk { margin-bottom: 22px; }
+.setup-label { font-size: 12.5px; color: var(--muted); letter-spacing: .1em; margin-bottom: 12px; }
+.chip-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.chip {
+  flex: 1; min-width: 100px; text-align: center; padding: 12px 10px; border-radius: 12px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--surface); color: var(--ink-2);
+  font-size: 14px; transition: all .22s ease; font-family: var(--sans);
+}
+.chip small { display: block; font-size: 11px; color: var(--muted); margin-top: 3px; }
+.chip:hover { border-color: #a8842a; }
+.chip.on { border-color: #a8842a; background: color-mix(in srgb, #a8842a 12%, var(--surface)); color: #a8842a; font-weight: 600; }
+.chip.on small { color: #a8842a; }
+
+.start-btn {
+  width: 100%; padding: 15px; border-radius: 14px; cursor: pointer; border: none;
+  background: #a8842a; color: #fdfbf5; font-family: var(--serif); font-size: 17px; font-weight: 700;
+  letter-spacing: .14em; box-shadow: var(--shadow); transition: all .25s ease; margin-top: 8px;
+}
+.start-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); filter: brightness(1.05); }
+
+/* 计时 / 计数器屏 */
+.game-hud { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.hud-q { font-family: var(--serif); font-size: 14px; color: var(--muted); letter-spacing: .06em; }
+
+/* 题目 */
+.qwrap { text-align: center; }
+.q-label { font-size: 12px; color: var(--muted); letter-spacing: .28em; margin-bottom: 16px; }
+.q-big {
+  font-family: var(--serif); font-size: 48px; font-weight: 700; line-height: 1.2; color: var(--ink);
+  margin: 4px auto 8px; padding: 6px 12px; display: inline-block; position: relative;
+  transition: transform .2s ease;
+}
+.q-big.pulse { animation: qPulse .5s ease; }
+@keyframes qPulse { 0% { transform: scale(1); } 40% { transform: scale(1.08); } 100% { transform: scale(1); } }
+.q-sub { color: var(--ink-2); font-size: 14px; margin-bottom: 26px; }
+
+.opts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 480px) { .opts { grid-template-columns: 1fr; } }
+.opt {
+  padding: 15px 10px; border-radius: 12px; cursor: pointer; text-align: center;
+  border: 1px solid var(--border); background: var(--surface); color: var(--ink);
+  font-family: var(--serif); font-size: 19px; font-weight: 600; transition: all .2s ease;
+}
+.opt:hover { border-color: #a8842a; transform: translateY(-2px); box-shadow: var(--shadow); }
+.opt.right { background: #5f8f6e; border-color: #5f8f6e; color: #fdfbf5; animation: okPulse .5s ease; }
+.opt.wrong { background: #b0596a; border-color: #b0596a; color: #fdfbf5; animation: shake .45s ease; }
+.opt.dim { opacity: .45; pointer-events: none; }
+.opt.disabled { pointer-events: none; }
+@keyframes okPulse { 0% { transform: scale(.96); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+@keyframes shake { 0%,100% { transform: translateX(0); } 20%,60% { transform: translateX(-7px); } 40%,80% { transform: translateX(7px); } }
+
+/* 反馈横条 */
+.fb {
+  margin-top: 18px; text-align: center; font-size: 13.5px; color: var(--ink-2);
+  min-height: 24px; display: flex; align-items: center; justify-content: center; gap: 10px; opacity: 0;
+  transition: opacity .3s ease;
+}
+.fb.show { opacity: 1; }
+.fb .fb-dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.fb-ok .fb-dot { background: #5f8f6e; }
+.fb-no .fb-dot { background: #b0596a; }
+
+/* 结束屏 */
+.result-big { text-align: center; padding: 12px 0 4px; }
+.r-score { font-family: var(--serif); font-size: 62px; font-weight: 700; color: #a8842a; line-height: 1; }
+.r-score small { font-size: 20px; color: var(--muted); font-weight: 400; }
+.r-label { color: var(--muted); letter-spacing: .18em; font-size: 12px; margin-top: 6px; }
+.r-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 24px 0; }
+.r-stat { background: var(--surface-2); border-radius: 12px; padding: 14px; text-align: center; }
+.r-stat b { display: block; font-family: var(--serif); font-size: 24px; color: var(--ink); }
+.r-stat span { font-size: 11.5px; color: var(--muted); letter-spacing: .05em; }
+
+/* 错题复盘 */
+.review { margin-top: 8px; border-top: 1px dashed var(--border-2); padding-top: 18px; }
+.review-title { font-family: var(--serif); font-size: 15px; font-weight: 700; margin-bottom: 12px; letter-spacing: .04em; }
+.review-list { display: flex; flex-direction: column; gap: 9px; }
+.rv-item { display: flex; align-items: center; gap: 10px; font-size: 14px; padding: 10px 13px; background: var(--surface-2); border-radius: 9px; }
+.rv-tag { flex: 0 0 auto; font-size: 11px; padding: 2px 7px; border-radius: 6px; background: var(--surface-3); color: var(--muted); white-space: nowrap; }
+.rv-q { font-family: var(--serif); font-weight: 700; min-width: 74px; color: var(--ink); flex: 1 1 auto; }
+.rv-arrow { color: var(--muted); }
+.rv-a { color: #5f8f6e; font-weight: 600; }
+.rv-ua { color: #b0596a; text-decoration: line-through; margin-left: 6px; font-size: 12.5px; }
+.review-none { color: var(--muted); font-size: 13px; text-align: center; padding: 8px; }
+
+/* 结束动作 */
+.result-actions { display: flex; gap: 12px; margin-top: 6px; }
+.result-actions .gbtn { flex: 1; padding: 13px; border-radius: 12px; font-family: var(--serif); font-weight: 600; letter-spacing: .04em; }
+.result-actions .gbtn.primary { background: #a8842a; border-color: #a8842a; color: #fdfbf5; }
+
+/* 游戏页外部链接 */
+.gamelinks { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 16px; }
+.game-link {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 11px 18px; border-radius: 11px; font-family: var(--serif); font-weight: 600;
+  font-size: 14px; letter-spacing: .04em; color: var(--ink);
+  background: var(--surface-2); border: 1px solid var(--border-2);
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+.game-link:hover { transform: translateY(-2px); border-color: #a8842a; background: color-mix(in srgb, #a8842a 9%, var(--surface)); }
+
+/* 进度圈提示 */
+.game-foot-note { text-align: center; color: var(--muted-2); font-size: 12px; margin-top: 18px; letter-spacing: .06em; }

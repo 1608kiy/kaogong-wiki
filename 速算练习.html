@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#f6f4ef" />
+<title>速算 · 每日练习 · 考公复习知识库</title>
+<meta name="description" content="加减乘除 + 百化分 混合速算练习" />
+<style>:root{--ac:#b0596a;}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="stylesheet" href="assets/game.css" /><link rel="stylesheet" href="assets/practice.css" />
+<script>try{if(localStorage.getItem("kb-theme")==="dark")document.documentElement.classList.add("dark");}catch(e){}</script>
+<script>try{var _m=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(!_m)document.documentElement.classList.add("anim");}catch(e){}</script>
+</head>
+<body>
+<div class="grain"></div>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-logo">考</span>
+      <span class="brand-text"><span class="brand-title">考公复习知识库</span><span class="brand-sub">每日复盘 · 复习手帐</span></span>
+    </a>
+    <nav class="topnav">
+      <a class="nav-link" href="index.html">首页</a>
+      <a class="nav-link on" href="百化分游戏.html">小游戏</a>
+      <button class="theme-btn" id="theme-toggle" type="button" aria-label="切换主题">✦</button>
+    </nav>
+  </div>
+</header>
+<main class="container">
+    <nav class="navcrumbs reveal" style="--d:.02s">
+      <a href="index.html">首页</a><span class="crumb-sep">/</span><a class="crumb-cur" href="速算.html">速算</a><span class="crumb-sep">/</span><span class="crumb-cur">速算 · 每日练习</span>
+    </nav>
+    <section class="doc-hero reveal" style="--ac:#b0596a;--d:.06s">
+      <div class="hyd-kicker"><span class="hyd-tone">茜</span><span class="hyd-tag">速算 · 专项练习</span></div>
+      <h1 class="hyd-title">⚡ 速算 · 每日练习</h1>
+      <p class="hyd-intro">加减乘除 + 百化分混合随机出题。四选一选最贴近的，限时作答，每天不重样。</p>
+      <div class="hyd-meta"><span class="hm-item">由易到难</span><span class="hm-item">逐题计分 · 错题复盘</span></div>
+    </section>
+    <div class="game-wrap reveal" style="--d:.14s" id="practice"></div>
+  </main>
+<footer class="foot">考公复习知识库 · 2026 · 本地复习手帐，静心而作</footer>
+<script src="assets/app.js"></script>
+<script src="assets/practice.js"></script>
+</body>
+</html>

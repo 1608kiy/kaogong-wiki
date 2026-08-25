@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#f6f4ef" />
+<title>📊 资料分析 · 除法速算 完整笔记（含 5%-30% 全量百化分） · 考公复习知识库</title>
+<meta name="description" content="前置步骤：判断选项差距 做除法必看！ 选项特征 差距类型 对策 首位不同；或首位相同、次位差 首位 差距大 10% 可大胆估算 首位相同、次位差 首位 差距小 10% 需要精算 总" />
+<style>:root{--ac:#b0596a;}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="assets/style.css" />
+
+<script>try{if(localStorage.getItem("kb-theme")==="dark")document.documentElement.classList.add("dark");}catch(e){}</script>
+<script>try{var _m=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(!_m)document.documentElement.classList.add("anim");}catch(e){}</script>
+</head>
+<body>
+<div class="grain"></div>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-logo">考</span>
+      <span class="brand-text"><span class="brand-title">考公复习知识库</span><span class="brand-sub">每日复盘 · 复习手帐</span></span>
+    </a>
+    <nav class="topnav">
+      <a class="nav-link on" href="index.html">首页</a>
+      <a class="nav-link" href="百化分游戏.html">小游戏</a>
+      <button class="theme-btn" id="theme-toggle" type="button" aria-label="切换主题">✦</button>
+    </nav>
+  </div>
+</header>
+<main class="container">
+    <nav class="navcrumbs reveal" style="--d:.02s">
+      <a href="index.html">首页</a><span class="crumb-sep">/</span><span class="crumb-sec">行测</span><span class="crumb-sep">/</span><a class="crumb-cur" href="%E9%80%9F%E7%AE%97.html">速算</a><span class="crumb-sep">/</span><span class="crumb-cur">📊 资料分析 · 除法速算 完整笔记（含 5%-30% 全量百化分）</span>
+    </nav>
+    <section class="doc-hero reveal" style="--ac:#b0596a;--d:.06s">
+      <div class="hyd-kicker"><span class="hyd-tone">茜</span><span class="hyd-tag">速算 · 第 3 章</span></div>
+      <h1 class="hyd-title">📊 资料分析 · 除法速算 完整笔记（含 5%-30% 全量百化分）</h1>
+      <div class="hyd-meta"><span class="hm-item">13 个小节</span></div>
+    </section>
+    <div class="note-grid">
+      <div class="toc-card reveal" style="--d:.15s">
+    <div class="toc-head"><span class="toc-mark">目</span><span class="toc-label">本篇目录</span></div>
+    <div class="toc-nav"><div class="toc-group flat"><ul class="toc-body"><li><a href="#sec-1">【前置步骤：判断选项差距】（做除法必看！）</a></li><li><a href="#sec-2">【总匹配原则：按增长率 r 选方法】⭐核心决策表</a></li><li><a href="#sec-3">一、四种方法速查对比表</a></li><li><a href="#sec-4">二、逐个方法详解</a></li><li><a href="#sec-5">1️⃣ 化除为乘法（r &lt; 5% 专属）</a></li><li><a href="#sec-6">2️⃣ 百化分转乘法（5% ≤ r ≤ 30% 首选）⭐</a></li><li><a href="#sec-7">3️⃣ 等比放缩法（分母凑整辅助）</a></li><li><a href="#sec-8">4️⃣ 截位直除法（万能兜底）🛡️</a></li><li><a href="#sec-9">5️⃣ 多步除法（连除/叠除）</a></li><li><a href="#sec-10">三、⚠️ 易错提醒</a></li><li><a href="#sec-11">四、📌 做题思考顺序（核心思路）</a></li><li><a href="#sec-12">💡 思考三连问</a></li><li><a href="#sec-13">五、🔗 加减乘除速算总复习表（四合一）</a></li></ul></div></div>
+  </div>
+      <article class="note-body reveal" style="--d:.16s">
+        <div class="prose"><h2 id="sec-1">【前置步骤：判断选项差距】（做除法必看！）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>选项特征</strong></th>
+<th><strong>差距类型</strong></th>
+<th><strong>对策</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>首位不同；或首位相同、次位差＞首位</td>
+<td><strong>差距大（&gt;10%）</strong></td>
+<td>可大胆估算</td>
+</tr>
+<tr>
+<td>首位相同、次位差＜首位</td>
+<td><strong>差距小（&lt;10%）</strong></td>
+<td>需要精算</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="sec-2">【总匹配原则：按增长率 r 选方法】⭐核心决策表</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>r 的范围</strong></th>
+<th><strong>首选方法</strong></th>
+<th><strong>备用方法</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>r &lt; 5%</strong></td>
+<td>化除为乘法</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>5% ≤ r ≤ 30%</strong></td>
+<td>百化分转乘法（能乘绝不除）</td>
+<td>不凑整 → 截位直除</td>
+</tr>
+<tr>
+<td><strong>r &gt; 30%</strong></td>
+<td>截位直除法（兜底）</td>
+<td>—</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="sec-3">一、四种方法速查对比表</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>本质原理</strong></th>
+<th><strong>适用场景</strong></th>
+<th><strong>一句话口诀</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>化除为乘</strong></td>
+<td>近似公式</td>
+<td>r&lt;5% 的基期计算</td>
+<td>÷(1+r) ≈ 减，÷(1−r) ≈ 加</td>
+</tr>
+<tr>
+<td><strong>百化分转乘</strong></td>
+<td>分数等价替换</td>
+<td>5%-30%，r 接近标准值</td>
+<td>能乘绝不除</td>
+</tr>
+<tr>
+<td><strong>等比放缩</strong></td>
+<td>分子分母同缩放</td>
+<td>分母接近整数；分数比较</td>
+<td>分母凑整，分子同步</td>
+</tr>
+<tr>
+<td><strong>截位直除</strong></td>
+<td>有效数字截取</td>
+<td>万能兜底，r&gt;30% 或精算</td>
+<td>分母截位，除到能区分就停</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="sec-4">二、逐个方法详解</h2>
+<h3 id="sec-5">1️⃣ 化除为乘法（r &lt; 5% 专属）</h3>
+<p><strong>核心公式（必背）</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>类型</strong></th>
+<th><strong>公式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>÷(1+r)</td>
+<td>A/(1+r) ≈ <strong>A − A×r</strong></td>
+</tr>
+<tr>
+<td>÷(1−r)</td>
+<td>A/(1−r) ≈ <strong>A + A×r</strong></td>
+</tr>
+</tbody></table></div>
+<p><strong>适用场景</strong>：小增长率的基期计算，选项差距适中</p>
+<p><strong>例题</strong></p>
+<blockquote>
+<p>现期 4285，增长 3.4%，求基期。</p>
+</blockquote>
+<pre><code>4285 ÷ (1 + 3.4%) ≈ 4285 − 4285×3.4% ≈ 4139 ✅
+</code></pre>
+<p>⚠️ <strong>注意</strong>：只适用于 |r| &lt; 5%，r 越大误差越大！</p>
+<hr>
+<h3 id="sec-6">2️⃣ 百化分转乘法（5% ≤ r ≤ 30% 首选）⭐</h3>
+<p><strong>核心要点</strong></p>
+<ul>
+<li>把分母 1±r 转化为分数，除法变乘法，<strong>能乘绝不除</strong></li>
+<li><strong>结果微调原则</strong>：分母比标准值<strong>大</strong> → 结果略<strong>小</strong>；分母比标准值<strong>小</strong> → 结果略<strong>大</strong></li>
+</ul>
+<p><strong>📈 增长型对照表（分母 = 1+r）</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>增长率 r</strong></th>
+<th><strong>分母 1+r</strong></th>
+<th><strong>等价分数</strong></th>
+<th><strong>除法转乘法</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>5%</td>
+<td>1.05</td>
+<td>21/20</td>
+<td>×20/21</td>
+</tr>
+<tr>
+<td>6.25%</td>
+<td>1.0625</td>
+<td>17/16</td>
+<td>×16/17</td>
+</tr>
+<tr>
+<td>10%</td>
+<td>1.1</td>
+<td>11/10</td>
+<td>×10/11</td>
+</tr>
+<tr>
+<td>11.1%</td>
+<td>1.111</td>
+<td>10/9</td>
+<td>×9/10</td>
+</tr>
+<tr>
+<td>12.5%</td>
+<td>1.125</td>
+<td>9/8</td>
+<td>×8/9</td>
+</tr>
+<tr>
+<td>14.3%</td>
+<td>1.143</td>
+<td>8/7</td>
+<td>×7/8</td>
+</tr>
+<tr>
+<td>16.7%</td>
+<td>1.167</td>
+<td>7/6</td>
+<td>×6/7</td>
+</tr>
+<tr>
+<td>20%</td>
+<td>1.2</td>
+<td>6/5</td>
+<td>×5/6</td>
+</tr>
+<tr>
+<td>25%</td>
+<td>1.25</td>
+<td>5/4</td>
+<td>×0.8</td>
+</tr>
+<tr>
+<td>28.6%</td>
+<td>1.286</td>
+<td>9/7</td>
+<td>×7/9</td>
+</tr>
+<tr>
+<td>30%</td>
+<td>1.3</td>
+<td>—</td>
+<td>❌ 无友好分数 → 截位直除</td>
+</tr>
+</tbody></table></div>
+<p><strong>📉 下降型对照表（分母 = 1−r）</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>降幅 r</strong></th>
+<th><strong>分母 1−r</strong></th>
+<th><strong>等价分数</strong></th>
+<th><strong>除法转乘法</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>5%</td>
+<td>0.95</td>
+<td>19/20</td>
+<td>×20/19</td>
+</tr>
+<tr>
+<td>10%</td>
+<td>0.9</td>
+<td>9/10</td>
+<td>×10/9</td>
+</tr>
+<tr>
+<td>11.1%</td>
+<td>0.889</td>
+<td>8/9</td>
+<td>×9/8</td>
+</tr>
+<tr>
+<td>12.5%</td>
+<td>0.875</td>
+<td>7/8</td>
+<td>×8/7</td>
+</tr>
+<tr>
+<td>14.3%</td>
+<td>0.857</td>
+<td>6/7</td>
+<td>×7/6</td>
+</tr>
+<tr>
+<td>16.7%</td>
+<td>0.833</td>
+<td>5/6</td>
+<td>×1.2</td>
+</tr>
+<tr>
+<td>20%</td>
+<td>0.8</td>
+<td>4/5</td>
+<td>×1.25</td>
+</tr>
+<tr>
+<td>25%</td>
+<td>0.75</td>
+<td>3/4</td>
+<td>×4/3</td>
+</tr>
+<tr>
+<td>28.6%</td>
+<td>0.714</td>
+<td>5/7</td>
+<td>×7/5</td>
+</tr>
+<tr>
+<td>30%</td>
+<td>0.7</td>
+<td>—</td>
+<td>❌ 无友好分数 → 截位直除</td>
+</tr>
+</tbody></table></div>
+<p><strong>例题</strong></p>
+<blockquote>
+<p>现期 4192，降幅 19.06%，求基期。</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>步骤</strong></th>
+<th><strong>内容</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>① 找接近标准值</td>
+<td>19.06% ≈ 20% → ÷0.8 ≈ ×1.25</td>
+</tr>
+<tr>
+<td>② 转乘计算</td>
+<td>4192 × 1.25 = 5240</td>
+</tr>
+<tr>
+<td>③ 误差微调</td>
+<td>真实分母 0.8094 <strong>大于</strong> 0.8 → 结果略<strong>小</strong>于 5240 ≈ <strong>5180</strong> ✅</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="sec-7">3️⃣ 等比放缩法（分母凑整辅助）</h3>
+<p><strong>核心要点</strong></p>
+<ul>
+<li>分子分母按<strong>相同比例</strong>缩放，分数值不变</li>
+<li>把分母凑成整数 / 好算的数，简化计算</li>
+</ul>
+<p><strong>适用场景</strong>：5%-30% 区间，分母接近整十数；多用于<strong>分数比较</strong>（精算速度弱于截位直除）</p>
+<p><strong>例题</strong></p>
+<blockquote>
+<p>4192 ÷ 0.8094</p>
+</blockquote>
+<pre><code>分母缩小约 1% 凑成 0.8，分子同步缩小 1%
+≈ 4150 ÷ 0.8 = 5187.5 ✅
+</code></pre>
+<hr>
+<h3 id="sec-8">4️⃣ 截位直除法（万能兜底）🛡️</h3>
+<p><strong>核心要点</strong></p>
+<ul>
+<li><strong>分母截有效数字，分子不动</strong></li>
+<li>除到能区分选项就停，不用除完</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>选项差距</strong></th>
+<th><strong>分母截位</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>差距大（&gt;10%）</td>
+<td>截 <strong>2</strong> 位</td>
+</tr>
+<tr>
+<td>差距小（&lt;10%）</td>
+<td>截 <strong>3</strong> 位</td>
+</tr>
+</tbody></table></div>
+<p><strong>适用场景</strong>：所有除法题型，尤其 r&gt;30%、选项差距小的精算</p>
+<p><strong>例题</strong></p>
+<blockquote>
+<p>31325 ÷ 0.9266，选项差距小</p>
+</blockquote>
+<pre><code>分母截 3 位：0.9266 → 0.927
+31325 ÷ 927 ≈ 33.8xx（即 338xx）✅
+</code></pre>
+<hr>
+<h3 id="sec-9">5️⃣ 多步除法（连除/叠除）</h3>
+<p><strong>核心要点</strong></p>
+<ul>
+<li>先<strong>交叉约分</strong>整理成 (A×D)/(B×C)，再分别截位计算</li>
+</ul>
+<p><strong>适用场景</strong>：基期比重、基期倍数、平均数的倍数等题型</p>
+<p><strong>例题</strong></p>
+<pre><code>1234/1.12 ÷ 2345/1.08
+= (1234 × 1.08)/(2345 × 1.12)
+≈ 0.52 ✅
+</code></pre>
+<hr>
+<h2 id="sec-10">三、⚠️ 易错提醒</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>常见坑</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>化除为乘</td>
+<td>只能用于 r&lt;5%；r 大了误差失控</td>
+</tr>
+<tr>
+<td>百化分</td>
+<td>别记混方向：÷0.8 是 ×1.25（变<strong>大</strong>），÷1.25 是 ×0.8（变<strong>小</strong>）；30% 无友好分数</td>
+</tr>
+<tr>
+<td>等比放缩</td>
+<td>分子分母必须<strong>同方向同比例</strong>缩放</td>
+</tr>
+<tr>
+<td>截位直除</td>
+<td>只截分母不截分子；差距判断错会导致截位不够精</td>
+</tr>
+<tr>
+<td>多步除法</td>
+<td>交叉约分别搞反：除以分数 = 乘它的倒数</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="sec-11">四、📌 做题思考顺序（核心思路）</h2>
+<pre><code>看到除法计算
+    │
+    ▼
+第一步：看选项差距
+    （决定能估多粗：差距大→2位截/大胆估；差距小→3位截/精算）
+    │
+    ▼
+第二步：看 r 落在哪个区间
+    ├─ r &lt; 5%
+    │      → 化除为乘（A ÷ (1+r) ≈ A − A×r）
+    │
+    ├─ 5% ≤ r ≤ 30%
+    │      ├─ r 接近标准值（10%、12.5%、20%…）
+    │      │      → ⭐ 百化分转乘法（能乘绝不除）
+    │      │         算完记得按真实分母微调方向！
+    │      ├─ 分母接近整数 → 等比放缩
+    │      └─ 都不凑整 → 截位直除
+    │
+    └─ r &gt; 30%
+           → 截位直除兜底
+    │
+    ▼
+第三步：多步除法？
+    → 先交叉约分成 (A×D)/(B×C)，再按上面规则逐个处理
+</code></pre>
+<h3 id="sec-12">💡 思考三连问</h3>
+<ol>
+<li><strong>选项差多少？</strong> → 决定估算精度（截几位）</li>
+<li><strong>r 是多少？</strong> → 决定用哪条路径（&lt;5% 化乘 / 5-30% 百化分 / &gt;30% 直除）</li>
+<li><strong>结果偏哪边？</strong> → 百化分和估算后，必须判断真实值偏大还是偏小，防止选错</li>
+</ol>
+<hr>
+<h2 id="sec-13">五、🔗 加减乘除速算总复习表（四合一）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>运算类型</strong></th>
+<th><strong>首选方法</strong></th>
+<th><strong>备用方法</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>加减法（末位不同）</td>
+<td>尾数法</td>
+<td>—</td>
+</tr>
+<tr>
+<td>加减法（首位不同）</td>
+<td>高位叠加法</td>
+<td>—</td>
+</tr>
+<tr>
+<td>加减法（数字近整）</td>
+<td>凑整法（多退少补）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>乘法（乘数规整）</td>
+<td>⭐ 错位加减速算</td>
+<td>—</td>
+</tr>
+<tr>
+<td>乘法（差距大）</td>
+<td>凑整估算法</td>
+<td>—</td>
+</tr>
+<tr>
+<td>乘法（差距小）</td>
+<td>拆分法</td>
+<td>—</td>
+</tr>
+<tr>
+<td>除法（r&lt;5%）</td>
+<td>化除为乘</td>
+<td>—</td>
+</tr>
+<tr>
+<td>除法（5%≤r≤30%）</td>
+<td>⭐ 百化分转乘</td>
+<td>等比放缩 / 截位直除</td>
+</tr>
+<tr>
+<td>除法（r&gt;30%）</td>
+<td>截位直除</td>
+<td>—</td>
+</tr>
+<tr>
+<td>多步除法</td>
+<td>交叉约分 + 上述方法组合</td>
+<td>—</td>
+</tr>
+</tbody></table></div>
+<blockquote>
+<p>💡 <strong>贯穿全局的黄金习惯</strong>：① 先看选项再动笔；② 能乘绝不除；③ 算完必验误差方向。</p>
+</blockquote>
+<hr>
+<p>到这里，加减乘除四大速算专题就齐了！💪 如果需要，我还可以帮你整理：</p>
+<ol>
+<li><strong>特殊分数大全</strong>（1/2 ~ 1/20 的百分数对照，配合百化分使用）</li>
+<li><strong>增长率相关公式</strong>（间隔增长率、混合增长率、年均增长率）</li>
+<li><strong>综合练习题</strong>：出一套混合四类速算的实战题帮你检验</li>
+</ol>
+<p>好的！全部整合成一张大表 + 记忆技巧，每天一眼扫完。📝</p>
+<hr>
+</div>
+        <div class="pager chapter-pager">
+          <a class="pg-btn" href="%E9%80%9F%E7%AE%97-2.html">← 上一章</a>
+          <a class="pg-btn pg-home" href="%E9%80%9F%E7%AE%97.html">☰ 返回目录</a>
+          <a class="pg-btn" href="%E9%80%9F%E7%AE%97-4.html">下一章 →</a>
+        </div>
+      </article>
+    </div>
+  </main>
+<footer class="foot">考公复习知识库 · 2026 · 本地复习手帐，静心而作</footer>
+<script src="assets/app.js"></script>
+
+</body>
+</html>

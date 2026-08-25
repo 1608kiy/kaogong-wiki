@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#f6f4ef" />
+<title>📊 资料分析 · 乘法速算 完整笔记 · 考公复习知识库</title>
+<meta name="description" content="一、三种方法速查对比表 方法 本质原理 适用场景 选项特征 一句话口诀 错位加减速算 乘法分配律 本身 本身×比例 r 为规整百分数 10%、20%、50% ；增速 降幅判定 差距" />
+<style>:root{--ac:#b0596a;}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="assets/style.css" />
+
+<script>try{if(localStorage.getItem("kb-theme")==="dark")document.documentElement.classList.add("dark");}catch(e){}</script>
+<script>try{var _m=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(!_m)document.documentElement.classList.add("anim");}catch(e){}</script>
+</head>
+<body>
+<div class="grain"></div>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-logo">考</span>
+      <span class="brand-text"><span class="brand-title">考公复习知识库</span><span class="brand-sub">每日复盘 · 复习手帐</span></span>
+    </a>
+    <nav class="topnav">
+      <a class="nav-link on" href="index.html">首页</a>
+      <a class="nav-link" href="百化分游戏.html">小游戏</a>
+      <button class="theme-btn" id="theme-toggle" type="button" aria-label="切换主题">✦</button>
+    </nav>
+  </div>
+</header>
+<main class="container">
+    <nav class="navcrumbs reveal" style="--d:.02s">
+      <a href="index.html">首页</a><span class="crumb-sep">/</span><span class="crumb-sec">行测</span><span class="crumb-sep">/</span><a class="crumb-cur" href="%E9%80%9F%E7%AE%97.html">速算</a><span class="crumb-sep">/</span><span class="crumb-cur">📊 资料分析 · 乘法速算 完整笔记</span>
+    </nav>
+    <section class="doc-hero reveal" style="--ac:#b0596a;--d:.06s">
+      <div class="hyd-kicker"><span class="hyd-tone">茜</span><span class="hyd-tag">速算 · 第 2 章</span></div>
+      <h1 class="hyd-title">📊 资料分析 · 乘法速算 完整笔记</h1>
+      <div class="hyd-meta"><span class="hm-item">9 个小节</span></div>
+    </section>
+    <div class="note-grid">
+      <div class="toc-card reveal" style="--d:.15s">
+    <div class="toc-head"><span class="toc-mark">目</span><span class="toc-label">本篇目录</span></div>
+    <div class="toc-nav"><div class="toc-group flat"><ul class="toc-body"><li><a href="#sec-1">一、三种方法速查对比表</a></li><li><a href="#sec-2">二、逐个方法详解</a></li><li><a href="#sec-3">1️⃣ 错位加减速算（⭐资料分析最常用）</a></li><li><a href="#sec-4">2️⃣ 拆分法（精算专用）</a></li><li><a href="#sec-5">3️⃣ 凑整估算法</a></li><li><a href="#sec-6">三、⚠️ 易错提醒</a></li><li><a href="#sec-7">四、📌 做题思考顺序（核心思路）</a></li><li><a href="#sec-8">💡 思考三连问</a></li><li><a href="#sec-9">五、🔗 与加减法速算的衔接（总复习用）</a></li></ul></div></div>
+  </div>
+      <article class="note-body reveal" style="--d:.16s">
+        <div class="prose"><h2 id="sec-1">一、三种方法速查对比表</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>本质原理</strong></th>
+<th><strong>适用场景</strong></th>
+<th><strong>选项特征</strong></th>
+<th><strong>一句话口诀</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>错位加减速算</strong></td>
+<td>乘法分配律（本身±本身×比例）</td>
+<td>r 为规整百分数（10%、20%、50%…）；增速/降幅判定</td>
+<td>差距适中</td>
+<td>×1.1错位加，×0.9错位减</td>
+</tr>
+<tr>
+<td><strong>拆分法</strong></td>
+<td>乘法分配律（整数+零头）</td>
+<td>乘数不规整、需要精算</td>
+<td>差距小（&lt;5%）</td>
+<td>拆成整数加零头，分开乘再合并</td>
+</tr>
+<tr>
+<td><strong>凑整估算法</strong></td>
+<td>四舍五入凑整</td>
+<td>只需判断范围、不需精算</td>
+<td>差距大（&gt;10%）</td>
+<td>凑整先算，误差再调</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="sec-2">二、逐个方法详解</h2>
+<h3 id="sec-3">1️⃣ 错位加减速算（⭐资料分析最常用）</h3>
+<p><strong>核心要点</strong></p>
+<ul>
+<li>用「本身 ± 本身的比例」替代乘法，本质是<strong>乘法分配律</strong></li>
+<li>对应资料分析核心公式：<strong>基期 × (1+r) = 现期</strong></li>
+</ul>
+<p><strong>常用固定倍率表（必背！）</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>乘数</strong></th>
+<th><strong>转化</strong></th>
+<th><strong>记忆方式</strong></th>
+<th><strong>对应含义</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>×1.1</td>
+<td>本身 + 本身×0.1</td>
+<td>错位加一位</td>
+<td>增速 10%</td>
+</tr>
+<tr>
+<td>×0.9</td>
+<td>本身 − 本身×0.1</td>
+<td>错位减一位</td>
+<td>降幅 10%</td>
+</tr>
+<tr>
+<td>×1.2</td>
+<td>本身 + 本身×0.2</td>
+<td>加本身的 20%</td>
+<td>增速 20%</td>
+</tr>
+<tr>
+<td>×1.5</td>
+<td>本身 + 本身×0.5</td>
+<td><strong>加自身一半</strong></td>
+<td>增速 50%</td>
+</tr>
+</tbody></table></div>
+<p><strong>适用场景</strong></p>
+<ul>
+<li>增速/降幅是否超标的<strong>判定题</strong></li>
+<li>r 为规整百分数的基期/增长量计算</li>
+<li>选项差距适中</li>
+</ul>
+<p><strong>例题</strong></p>
+<blockquote>
+<p>判断：基期 463，现期 415，降幅是否超过 10%？</p>
+</blockquote>
+<p><strong>解题过程</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>步骤</strong></th>
+<th><strong>内容</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>① 转化判定式</td>
+<td>降幅超 10% → 现期 &lt; 基期 × 0.9</td>
+</tr>
+<tr>
+<td>② 错位减速算</td>
+<td>463 × 0.9 = 463 − 46.3 = <strong>416.7</strong></td>
+</tr>
+<tr>
+<td>③ 比较得出结论</td>
+<td>415 &lt; 416.7 → <strong>降幅超过 10%</strong> ✅</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="sec-4">2️⃣ 拆分法（精算专用）</h3>
+<p><strong>核心要点</strong></p>
+<ul>
+<li>把复杂乘数拆成「<strong>整数 + 零头</strong>」，分别相乘再加减</li>
+<li>避免复杂进位，降低出错率</li>
+</ul>
+<p><strong>适用场景</strong></p>
+<ul>
+<li>选项差距小（&lt;5%）</li>
+<li>乘数不规整，需要相对精确的计算</li>
+</ul>
+<p><strong>例题</strong></p>
+<blockquote>
+<p>计算：347 × 1.23</p>
+</blockquote>
+<p><strong>解题过程</strong></p>
+<pre><code>347 × 1.23
+= 347 × (1 + 0.2 + 0.03)
+= 347 + 69.4 + 10.41
+= 426.81
+</code></pre>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>拆分项</strong></th>
+<th><strong>计算</strong></th>
+<th><strong>结果</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>整数部分</td>
+<td>347 × 1</td>
+<td>347</td>
+</tr>
+<tr>
+<td>零头①</td>
+<td>347 × 0.2</td>
+<td>69.4</td>
+</tr>
+<tr>
+<td>零头②</td>
+<td>347 × 0.03</td>
+<td>10.41</td>
+</tr>
+<tr>
+<td>合计</td>
+<td>—</td>
+<td><strong>426.81</strong> ✅</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h3 id="sec-5">3️⃣ 凑整估算法</h3>
+<p><strong>核心要点</strong></p>
+<ul>
+<li>把数字凑成<strong>整十/整百/好算的数</strong>，先算出近似值</li>
+<li>再根据<strong>误差方向</strong>微调结果（放大了就调小，缩小了就调大）</li>
+</ul>
+<p><strong>适用场景</strong></p>
+<ul>
+<li>选项差距大（&gt;10%）</li>
+<li>只需判断范围，不需要精算</li>
+</ul>
+<p><strong>例题</strong></p>
+<blockquote>
+<p>计算：592 × 18.3%</p>
+</blockquote>
+<p><strong>解题过程</strong></p>
+<pre><code>≈ 600 × 18% = 108
+</code></pre>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>调整项</strong></th>
+<th><strong>方向</strong></th>
+<th><strong>影响</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>592 → 600</td>
+<td>放大 ↑</td>
+<td>结果偏大</td>
+</tr>
+<tr>
+<td>18.3% → 18%</td>
+<td>缩小 ↓</td>
+<td>结果偏小</td>
+</tr>
+<tr>
+<td>综合</td>
+<td>一升一降，误差<strong>部分抵消</strong></td>
+<td>真实值 ≈ 108（略小） ✅</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="sec-6">三、⚠️ 易错提醒</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>常见坑</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>错位加减速算</td>
+<td>固定倍率记混（×0.9 是<strong>减</strong>不是加）；判定题注意比较方向</td>
+</tr>
+<tr>
+<td>拆分法</td>
+<td>拆分后各项别漏加/漏减；小数点位数要对准</td>
+</tr>
+<tr>
+<td>凑整估算法</td>
+<td>只凑一边误差会累积；注意“一放一缩可抵消”的技巧</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="sec-7">四、📌 做题思考顺序（核心思路）</h2>
+<pre><code>看到乘法计算
+    │
+    ▼
+第一步：看 r（乘数）是否规整？
+    ├─ 是（1.1 / 0.9 / 1.2 / 1.5 等）
+    │      → ⭐ 错位加减速算（首选！最快）
+    │
+    └─ 否 → 第二步：看选项差距
+              ├─ 差距大（&gt;10%）
+              │      → 凑整估算法（快，只定范围）
+              ├─ 差距小（&lt;5%）
+              │      → 拆分法（稳，要精算）
+              └─ 差距适中
+                     → 错位/凑整 + 微调，灵活组合
+</code></pre>
+<h3 id="sec-8">💡 思考三连问</h3>
+<ol>
+<li><strong>乘数规整吗？</strong> → 规整就用错位加减，别犹豫</li>
+<li><strong>选项差多少？</strong> → 差得多就估，差得少就拆</li>
+<li><strong>误差往哪偏？</strong> → 估算后一定要判断真实值偏大还是偏小，防止“算对了却选错”</li>
+</ol>
+<hr>
+<h2 id="sec-9">五、🔗 与加减法速算的衔接（总复习用）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th><strong>运算类型</strong></th>
+<th><strong>首选方法</strong></th>
+<th><strong>备用方法</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>加减法（末位不同）</td>
+<td>尾数法</td>
+<td>—</td>
+</tr>
+<tr>
+<td>加减法（首位不同）</td>
+<td>高位叠加法</td>
+<td>—</td>
+</tr>
+<tr>
+<td>加减法（数字近整）</td>
+<td>凑整法（多退少补）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>乘法（乘数规整）</td>
+<td>⭐ 错位加减速算</td>
+<td>—</td>
+</tr>
+<tr>
+<td>乘法（选项差距大）</td>
+<td>凑整估算法</td>
+<td>—</td>
+</tr>
+<tr>
+<td>乘法（选项差距小）</td>
+<td>拆分法</td>
+<td>—</td>
+</tr>
+</tbody></table></div>
+<hr>
+<p>需要的话，我可以继续帮你整理下一个专题（如<strong>除法速算：截位直除法、特殊分数法</strong>），乘除结合就基本覆盖资料分析计算的全部核心技巧了。💪</p>
+<p>好的！延续之前的风格，帮你把「除法速算」整理成完整复习笔记，并附上<strong>做题思考顺序</strong>。直接复制保存到知识库即可。📝</p>
+<hr>
+</div>
+        <div class="pager chapter-pager">
+          <a class="pg-btn" href="%E9%80%9F%E7%AE%97-1.html">← 上一章</a>
+          <a class="pg-btn pg-home" href="%E9%80%9F%E7%AE%97.html">☰ 返回目录</a>
+          <a class="pg-btn" href="%E9%80%9F%E7%AE%97-3.html">下一章 →</a>
+        </div>
+      </article>
+    </div>
+  </main>
+<footer class="foot">考公复习知识库 · 2026 · 本地复习手帐，静心而作</footer>
+<script src="assets/app.js"></script>
+
+</body>
+</html>

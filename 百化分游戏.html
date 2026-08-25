@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#f6f4ef" />
+<title>百化分 · 配对小游戏 · 考公复习知识库</title>
+<meta name="description" content="分数 ↔ 百分数 匹配练习小游戏" />
+<style>:root{--ac:#a8842a;}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="stylesheet" href="assets/game.css" />
+<script>try{if(localStorage.getItem("kb-theme")==="dark")document.documentElement.classList.add("dark");}catch(e){}</script>
+<script>try{var _m=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(!_m)document.documentElement.classList.add("anim");}catch(e){}</script>
+</head>
+<body>
+<div class="grain"></div>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-logo">考</span>
+      <span class="brand-text"><span class="brand-title">考公复习知识库</span><span class="brand-sub">每日复盘 · 复习手帐</span></span>
+    </a>
+    <nav class="topnav">
+      <a class="nav-link" href="index.html">首页</a>
+      <a class="nav-link on" href="百化分游戏.html">小游戏</a>
+      <button class="theme-btn" id="theme-toggle" type="button" aria-label="切换主题">✦</button>
+    </nav>
+  </div>
+</header>
+<main class="container">
+    <nav class="navcrumbs reveal" style="--d:.02s">
+      <a href="index.html">首页</a><span class="crumb-sep">/</span><span class="crumb-cur">百化分 · 配对小游戏</span>
+    </nav>
+    <section class="doc-hero game-hero reveal" style="--ac:#a8842a;--d:.06s">
+      <div class="hyd-kicker"><span class="hyd-tone">山吹</span><span class="hyd-tag">速算 · 专项练习</span></div>
+      <h1 class="hyd-title">🎮 百化分 · 每日配对小游戏</h1>
+      <p class="hyd-intro">把一个分数和它对应的百分数配对。玩着玩着，百化分就成了肌肉记忆。</p>
+      <div class="hyd-meta"><span class="hm-item" id="today-count">今日：—</span><span class="hm-item" id="best-score">最佳：—</span></div>
+    </section>
+    <div class="game-wrap reveal" style="--d:.14s" id="game"></div>
+    <div class="gamelinks reveal" style="--d:.22s">
+      <a class="game-link" href="百化分速查.html">📖 打开百化分速查总表</a>
+      <a class="game-link" href="速算练习.html">⚡ 去练速算题 →</a>
+    </div>
+  </main>
+<footer class="foot">考公复习知识库 · 2026 · 本地复习手帐，静心而作</footer>
+<script src="assets/app.js"></script>
+<script src="assets/game.js"></script>
+</body>
+</html>
