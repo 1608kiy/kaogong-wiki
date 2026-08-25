@@ -21,6 +21,10 @@ const CONFIG_PATH = path.join(NOTES_DIR, "目录.json");
 fs.mkdirSync(OUT_DIR, { recursive: true });
 fs.mkdirSync(ASSETS_DIR, { recursive: true });
 
+// 拷贝手工维护的静态资产（css/js）到输出目录（纳入版本控制，CI 也能带上）
+const STATIC_DIR = path.join(ROOT, "构建", "static");
+fs.cpSync(STATIC_DIR, OUT_DIR, { recursive: true });
+
 marked.setOptions({ gfm: true, breaks: false });
 
 function readText(p) { return fs.readFileSync(p, "utf8"); }

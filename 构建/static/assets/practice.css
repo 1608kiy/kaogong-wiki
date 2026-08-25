@@ -1,0 +1,77 @@
+/* =========================================================
+   速算 · 每日练习 样式（在 game.css 基础上补充）
+   ========================================================= */
+
+/* 难度弧线 */
+.tier-line { display: flex; gap: 6px; align-items: flex-end; padding: 4px 2px 2px; }
+.tdot { flex: 1; height: 10px; border-radius: 3px; background: var(--surface-2); }
+.tier-line .tdot.t0 { height: 8px; background: color-mix(in srgb, #b0596a 30%, var(--surface-2)); }
+.tier-line .tdot.t1 { height: 12px; background: color-mix(in srgb, #b0596a 55%, var(--surface-2)); }
+.tier-line .tdot.t2 { height: 16px; background: color-mix(in srgb, #b0596a 80%, var(--surface-2)); }
+.tier-legend { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); margin-top: 7px; letter-spacing: .08em; }
+.bestline { margin-top: -6px; color: var(--ink-2); }
+.bestline b { color: #b0596a; font-family: var(--serif); }
+
+/* 题量小 chip */
+.chip-row.small { gap: 8px; }
+.chip.s { flex: 0 0 auto; min-width: 0; font-size: 13px; padding: 9px 18px; }
+
+/* 计分条 */
+.hud-pair { display: flex; align-items: baseline; gap: 4px; }
+.hud-label { font-size: 13px; color: var(--muted); }
+.hud-q { font-family: var(--serif); font-size: 20px; font-weight: 700; color: var(--ink); }
+.hud-right { display: flex; align-items: center; gap: 14px; }
+.hud-score { font-family: var(--serif); font-size: 15px; font-weight: 700; color: #5f8f6e; }
+.hud-time { font-family: var(--serif); font-size: 15px; font-weight: 700; color: var(--ink-2); }
+
+/* 题目难度标签 + 巧算提示 */
+.q-tier {
+  display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center;
+  font-size: 12px; color: var(--muted); letter-spacing: .08em; margin: 2px auto 14px;
+  padding: 4px 12px; border-radius: 999px; border: 1px solid var(--border-2); background: var(--surface-2);
+}
+.q-tier.tier0 { color: #7ba05b; border-color: color-mix(in srgb, #7ba05b 30%, var(--border)); }
+.q-tier.tier1 { color: #a8842a; border-color: color-mix(in srgb, #a8842a 30%, var(--border)); }
+.q-tier.tier2 { color: #b0596a; border-color: color-mix(in srgb, #b0596a 32%, var(--border)); }
+.q-tier.tier2 { letter-spacing: .04em; }
+.q-hint { color: #a8842a; font-weight: 600; }
+.q-tier.tier2 .q-hint { color: #b0596a; }
+.q-tsep { opacity: .55; margin: 0 2px; color: var(--muted); }
+
+/* 答题时隐藏顶部说明卡，把视野让给题目+选项 */
+body.is-playing .doc-hero { display: none; }
+body.is-playing .game-wrap { margin-top: 0; }
+body.is-playing .game-pad { padding: 18px 16px 22px; }
+@media (max-width: 560px) { body.is-playing .game-pad { padding: 16px 14px 20px; } }
+
+/* 计算题大数字（可换行，避免溢出） */
+.q-big.q-practice {
+  font-size: 33px; font-weight: 700; line-height: 1.35; letter-spacing: .01em;
+  white-space: normal; word-break: break-word; max-width: 100%; padding: 6px 2px;
+}
+@media (max-width: 560px) { .q-big.q-practice { font-size: 26px; } }
+
+/* 四个选项（AB 上下两格，双列） */
+.opt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 16px; }
+@media (max-width: 480px) { .opt-grid { grid-template-columns: 1fr; } }
+.opt.quiz {
+  display: flex; align-items: center; gap: 10px; justify-content: flex-start;
+  padding: 12px 14px; font-size: 17px; text-align: left;
+}
+.opt-key {
+  flex: 0 0 26px; height: 26px; display: grid; place-items: center; border-radius: 8px;
+  background: var(--surface-2); color: var(--muted); font-size: 12.5px; font-weight: 700;
+}
+.opt-text { font-family: var(--serif); font-weight: 700; color: var(--ink); }
+.opt.correct { background: #5f8f6e; border-color: #5f8f6e; color: #fdfbf5; }
+.opt.correct .opt-text, .opt.correct .opt-key { color: #fdfbf5; }
+.opt.quiz.correct .opt-key { background: rgba(255,255,255,.2); }
+
+/* 结束屏 */
+.result { text-align: center; }
+.result-tip { color: var(--muted); font-size: 12px; letter-spacing: .22em; margin-bottom: 8px; }
+.result-score { font-family: var(--serif); font-size: 66px; font-weight: 700; line-height: 1; }
+.result-total { color: var(--muted); font-size: 14px; margin-top: 6px; }
+.result-total span { font-family: var(--serif); font-size: 22px; font-weight: 700; color: var(--ink); }
+.result-grade { font-family: var(--serif); font-size: 15px; font-weight: 600; margin-top: 8px; letter-spacing: .06em; }
+.result-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 22px 0; }

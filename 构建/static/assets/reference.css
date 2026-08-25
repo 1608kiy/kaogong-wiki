@@ -1,0 +1,37 @@
+/* =========================================================
+   百化分 · 速查总表 样式
+   ========================================================= */
+
+.reference-wrap { max-width: 780px; margin: 0 auto 24px; }
+.ref-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  box-shadow: var(--shadow); overflow: hidden;
+}
+.ref-head {
+  display: flex; align-items: center; gap: 12px; padding: 16px 20px;
+  border-bottom: 1px solid var(--border); background: color-mix(in srgb, #a8842a 8%, var(--surface));
+}
+.ref-mark {
+  width: 30px; height: 30px; display: grid; place-items: center; border-radius: 8px;
+  background: color-mix(in srgb, #a8842a 16%, transparent); color: #a8842a;
+  font-family: var(--serif); font-size: 15px; font-weight: 700;
+}
+.ref-title { font-family: var(--serif); font-weight: 700; font-size: 16px; letter-spacing: .05em; }
+.ref-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.ref-body { padding: 18px 20px 22px; overflow-x: auto; }
+
+.ref-table { width: 100%; border-collapse: collapse; font-size: 15px; min-width: 460px; }
+.ref-table th, .ref-table td { padding: 10px 12px; text-align: center; border-bottom: 1px solid var(--border-2); }
+.ref-table th {
+  color: var(--muted); font-weight: 600; font-size: 12px; letter-spacing: .1em;
+  background: var(--surface-2);
+}
+.ref-table thead th { position: sticky; top: 0; }
+.ref-table td { font-family: var(--serif); color: var(--ink); }
+.ref-table tbody tr:hover td { background: color-mix(in srgb, #a8842a 6%, transparent); }
+.ref-table td:first-child { font-weight: 700; color: #a8842a; font-size: 16px; }
+.ref-table td:nth-child(2) { font-size: 14px; color: var(--ink-2); }
+.ref-table td:nth-child(3), .ref-table td:nth-child(4) { font-weight: 700; color: var(--ink); }
+.ref-table tr:last-child td { border-bottom: none; }
+
+.reference-wrap .game-foot-note { margin-top: 18px; }
